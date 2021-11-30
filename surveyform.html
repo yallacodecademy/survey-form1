@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto+Condensed&family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="surveyform.css">
+    <title>FeeeelDesign Survey</title>
+</head>
+<body>
+  <div class="container">
+
+      <header class="header">
+
+        <h1 id="title">
+        FeeeelDesign Survey Form</h1>
+        <p id="description">
+        Thank you for taking the time to help us improve the shop</p>
+
+      </header>
+
+    <form action="" id="survey-form">
+
+        <div class="form-team">
+          <label
+            for="name"
+            id="name-label"
+            class="input-label">
+            Name:</label>
+          <input
+            type="text"
+            id="name"
+            class="form-test"
+            name="name"
+            placeholder="Your Name Here">
+        </div>
+
+        <div class="form-team">
+            <label
+            for="email"
+            id="email-label"
+            class="input-label">
+            Email:</label>
+            <input
+            type="email"
+            id="email" name="email"
+            class="form-test"
+            placeholder="Your Email Here">
+        </div>
+
+        <div class="form-team">
+            <label
+            for="number"
+            id="number-label"
+            class="input-label">
+            Age:</label>
+            <input
+            type="number"
+            id="number"
+            class="form-test"
+            name="number"
+            placeholder="Age"
+            max="100"
+            min="14">
+        </div>
+
+        <div class="form-team">
+            <p class="select-label">What kind of shirts 
+              do you like in our fashion shop?</p>
+
+            <select name="select-one" id="dropdown" class="form-test">
+                <option value="" disabled selected>select one</option>
+                <option value="">Polo shirt</option>
+                <option value="">V-neck shirt</option>
+                <option value="">Sleeveless shirt</option>
+                <option value="">Sweat shirt</option>
+                <option value="">Dress shirt</option>
+            </select>
+        </div>
+
+      <div class="form-team">
+        <p>What is the most popular color in your opinion?</p>
+
+          <input type="radio" name="fav-color" id="fav-color1" 
+          class="input-radio" value="red">
+          <label for="fav-color1">Red</label><br>
+
+          <input type="radio" name="fav-color" id="fav-color2" 
+          class="input-radio" value="green">
+          <label for="fav-color2">Green</label><br>
+          
+          <input type="radio" name="fav-color" id="fav-color3" 
+          class="input-radio" value="pink">
+          <label for="fav-color3">Pink</label><br>
+
+      </div>
+
+      <div class="form-team">
+
+        <p>Do you think we should add some of those fashions?</p>
+
+          <input type="checkbox" id="fashion1" name="fashion" 
+          class="input-checkbox" value="jacket">
+          <label for="fashion1">jacket</label><br>
+
+          <input type="checkbox" id="fashion2" name="fashion" 
+          class="input-checkbox" value="coat">
+          <label for="fashion2">coat</label><br>
+
+          <input type="checkbox" id="fashion3" name="fashion" 
+          class="input-checkbox" value="jumper">
+          <label for="fashion3">jumper</label><br>
+
+          <input type="checkbox" id="fashion4" name="fashion" 
+          class="input-checkbox" value="trousers">
+          <label for="fashion4">trousers</label><br>
+
+          <input type="checkbox" id="fashion5" name="fashion" 
+          class="input-checkbox" value="cardigan">
+          <label for="fashion5">cardigan</label><br>
+
+          <input type="checkbox" id="fashion6" name="fashion" 
+          class="input-checkbox" value="jeans">
+          <label for="fashion6">jeans</label><br>
+
+          <input type="checkbox" id="fashion7" name="fashion" 
+          class="input-checkbox" value="tracksuit">
+          <label for="fashion7">tracksuit</label><br>
+
+      </div>
+
+      <div class="form-team">
+          <p>Any comments or suggestions?</p>
+          <textarea name="comment" id="comments" class="input-textarea" 
+          placeholder="Write Your Comment Here"></textarea>
+      </div>
+
+      <div class="form-team">
+      <input type="submit" id="submit" name="submit">
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+html {
+    font-size: 100%; /* Don’t use rem/em for padding, margin, border, etc. 
+    Set your <html> to font-size: 100% and just use rem/em for every 
+    font-size you want to set.*/ 
+}
+
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box; /* The box-sizing property allows 
+    us to include the padding and border in an element's total width and height.*/
+}
+
+body {
+   font-size: 1.2rem;
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   line-height: 1.5;
+   font-weight: 600;
+   color: rgb(255, 255, 255);
+   margin: 0;
+}
+
+body::before {
+    content: ''; /* Nothing: content: ""; – Useful for clearfix and inserting images as 
+                 background-images (set width and height, and can even resize with background-size).*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* The default z-index value of all the elements on a web page is auto, 
+                which corresponds to 0 where no z-index is assigned. An element with z-index: 
+                -1 will be displayed behind all other elements on the page, assuming they are given 
+                no z-index values.*/
+    background: #0804f1;
+    background-image: linear-gradient(
+            220deg, 
+            rgba(0, 30, 255, 0.8),
+            rgba(235, 99, 226, 0.7)), 
+            url(/image/female-friends-out-shopping-together.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+form {
+    margin: 0 auto 20px auto;
+    background-color: rgba(56, 5, 54, 0.85);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 1.1rem;
+    }
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+h1 {
+font-weight: 500;
+line-height: 1.2;
+ }
+
+ h1, p {
+margin-top: 0;
+margin-bottom: 10px;
+ }
+ 
+ #description {
+     font-style: italic;
+ }
+
+ .container {
+     margin: 40px auto 15px auto;
+     width: 100%;
+ }
+
+ @media (min-width: 576px) {
+     .container {
+         max-width: 540px;
+    }
+     
+}
+
+ @media (min-width: 768px) {
+     .container {
+         max-width: 720px;
+     }
+ }
+
+ .form-team{
+     margin: 15px auto 15px auto;
+     padding: 5px;
+}
+
+ .header {
+    padding: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input,
+button,
+textarea,
+select {
+    margin-bottom: 0px;
+    font-family: inherit; /* inherited from body*/
+    line-height: inherit;
+    font-size: inherit;
+}
+
+.input-radio, .input-checkbox {
+    display: inline-block; /* https://www.w3schools.com/css/css_inline-block.asp */
+    margin-right: 10px;
+    min-height: 18px;
+    min-width: 18px;
+}
+ 
+.input-textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     display: block;
+     resize: vertical;
+     min-height: 130px;
+ }
+
+ #submit {
+     display: block;
+     align-content: center;
+     width: 100%;
+     padding: 8px;
+     cursor: pointer;
+     width: 100%;
+     border-radius: 3px;
+     background-color: #00b380;
+     color: rgb(255, 255, 255);
+     font-style: italic;
+
+}
+
+.form-test {
+    display: block;
+    width: 100%;
+    height: 35px;
+    font-size: 1.1rem;
+    color: #333333;
+    border: 1px solid #000dff;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+
+::placeholder {
+    color:#666666; /* use it if you can't set a color to the placeholder */ 
+}
