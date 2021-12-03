@@ -161,3 +161,8 @@ select {
 ::placeholder {
     color:#666666; /* use it if you can't set a color to the placeholder */ 
 }
+.text {
+    margin-left: 6px;
+    font-size: 0.9rem;
+    color: bisque;
+}
